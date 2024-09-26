@@ -1,0 +1,27 @@
+.header {
+    @apply w-full xl:w-11/12 xxl:w-10/12 my-0 mx-auto py-4 px-0 flex justify-between items-center bg-[#519ec2] fixed inset-x-0 top-0 z-20;
+
+    &.scroll {
+        @apply bg-[#93afbd];
+    }
+
+    &-logo {
+        @apply ml-20;
+    }
+
+    &-nav a {
+        @apply mr-4 py-0 px-4 inline-block no-underline;
+
+        &:hover {
+            @apply text-[antiquewhite];
+        }
+
+        &:nth-last-child(1) {
+            @apply mr-20;
+        }
+    }
+
+    &-active {
+        @apply text-[red];
+    }
+}

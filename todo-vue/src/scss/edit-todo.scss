@@ -1,0 +1,36 @@
+.edit-todo {
+
+    &-header {
+        @apply mb-12;
+    }
+
+    &-header.change-color {
+        @apply text-[aqua];
+    }
+
+    &-form {
+        @apply h-2/6 mb-8;
+        
+        &-div {
+            @apply items-center mb-8 flex-col;
+
+            input,
+            textarea {
+                @apply block w-full custom-border border-slate-500 py-0.5 px-2;
+            }
+
+            textarea {
+                @apply h-40;
+            }
+
+            input:focus,
+            textarea:focus {
+                @apply outline-none bg-[#f7ebff] border-[#3a0061];
+            }
+
+            label {
+                @apply font-bold block mb-2 text-start;
+            }
+        }
+    }
+}

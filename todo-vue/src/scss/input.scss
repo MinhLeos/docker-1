@@ -1,0 +1,16 @@
+.container {
+    @apply mb-8 flex-col;
+
+    .input {
+        @apply block w-full py-1 px-2 custom-border border-[#ccc];
+
+        &:focus{
+            @apply outline-none border-[#3a0061] bg-[#f7ebff];
+        }
+    }
+
+    .label {
+        @apply block mb-2 font-bold text-start;
+    }
+}
+

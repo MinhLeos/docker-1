@@ -1,0 +1,47 @@
+.dialog {
+
+  &-div {
+    @apply fixed top-0 left-0 h-screen w-full bg-[#000000bf] z-30;
+  }
+
+  &-dialog {
+    @apply min-h-[20%] xl:w-[50%] xl:left-[25%] xxl:left-[30%] xxl:w-[40%] fixed top-[20vh] left-[20%] w-[60%] z-[100];
+    @apply rounded-xl border-none p-0 m-0 overflow-hidden shadow-lg;
+  }
+
+  &-header {
+    @apply bg-[#3a0061] text-white w-full p-4;
+
+    h2 {
+      @apply m-0;
+    }
+  }
+
+  &-section {
+    @apply p-4;
+  }
+
+  &-menu {
+    @apply flex justify-end m-0 p-4;
+  }
+
+  &-enter-active {
+    animation: fadeModal 0.3s ease-in-out;
+  }
+
+  &-leave-active {
+    animation: fadeModal 0.5s ease-in-out reverse;
+  }
+
+  @keyframes fadeModal {
+    from {
+      opacity: 0;
+      transform: translateY(-150px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

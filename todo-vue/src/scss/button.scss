@@ -1,0 +1,28 @@
+.btn {
+    @apply w-28 py-1.5 px-0 outline-none opacity-80 bg-[#10a3e7] text-white mr-4 custom-border border-transparent; 
+    @apply rounded-lg font-medium text-base cursor-pointer transition-[border-color] duration-300;
+
+    &:disabled {
+        @apply pointer-events-none opacity-20;
+    }
+
+    &:hover {
+        @apply opacity-100;
+    }
+
+    &:active {
+        @apply opacity-60;
+    }
+
+    a {
+        @apply inline-block w-full no-underline py-[0.6em] px-[1.2em];
+    }
+
+    &.edit {
+        @apply bg-[#128dc5];
+    }
+
+    &.delete {
+        @apply bg-[#a50909];
+    }
+}

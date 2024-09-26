@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h2 {
+        @apply text-xl;
+    }
+}
+
+@layer components {
+    .wrapper {
+        @apply w-3/6 p-4 text-center my-8 mx-auto bg-[antiquewhite] border border-solid border-transparent rounded-3xl;
+    }
+    .custom-border {
+        @apply border border-solid;
+    }
+    .custom-h2 {
+        @apply text-4xl text-center text-[#8797a5];
+    }
+}

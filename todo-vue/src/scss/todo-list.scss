@@ -1,0 +1,17 @@
+.todo-list {
+    
+    &-header {
+        @apply mb-4;
+    }
+
+    &-item {
+        @apply max-h-[75vh] overflow-auto;
+
+        &::-webkit-scrollbar {
+            @apply hidden w-0;
+        }
+    }
+}
+.loading {
+    @apply w-2/3 h-20 text-center my-8 mx-auto;
+}
