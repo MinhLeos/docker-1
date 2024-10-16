@@ -9,10 +9,11 @@ services:
     build: ./todo-be
     environment:
       NODE_ENV: production
+    command: npm run start:prod
     volumes:
-      - ./todo-be:/app
+      # - ./todo-be:/app
       - /app/dist
-
+      - ./todo-be:/app
   frontend:
     build:
       context: ./todo-vue
