@@ -9,7 +9,6 @@ services:
     build: ./todo-be
     environment:
       NODE_ENV: production
-    command: npm run start:prod
     volumes:
       - ./todo-be:/app
       - /app/dist
