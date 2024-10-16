@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+  database:
+    volumes:
+      - ./postgres-data-dev:/var/lib/postgresql/data
+
+  backend:
+    build: ./todo-be
+    environment:
+      NODE_ENV: development
+    command: npm run start:dev
+    volumes:
+      - ./todo-be:/app
+      - /app/node_modules
+
+  frontend:
+    build:
+      context: ./todo-vue
+      args:
+        NODE_ENV: development
+    environment:
+      NODE_ENV: development
+    command: npm run dev
+    volumes:
+      - ./todo-vue:/app
+      - /app/node_modules
