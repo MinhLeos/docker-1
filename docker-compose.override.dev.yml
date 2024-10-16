@@ -19,6 +19,7 @@ services:
       context: ./todo-vue
       args:
         NODE_ENV: development
+    image: test-1-frontend-dev
     environment:
       NODE_ENV: development
     command: npm run dev
